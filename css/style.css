@@ -1,12 +1,19 @@
 @font-face {
-    font-family: 'ArborCasual';
-    src: url(/fonts/ArborCasual.ttf);
+    font-family: 'ArborCasual', Arial, Helvetica, sans-serif;
+    src: url(../fonts/ArborCasual.ttf);
     font-weight: normal;
     font-style: normal;
 }
 *{
-    box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    not supported by any browser */
+    box-sizing: border-box;
 }
 body{
     background: #f2f2f2;
