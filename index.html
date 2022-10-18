@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onclick="mouseSound()">
     <div class="game">
         <div class="menu-game">
             <div class="game-name">Супермаркет</div>
@@ -15,10 +15,24 @@
                 <div class="play menu-button" onclick="startGame()">Играть</div>
             </div>
         </div>
-        <div class="delivery">
-            <div class="close" onclick="closeWindow('deliveryWindow')">
+        <div class="delivery info-menu">
+            <div class="close" onclick="closeWindow('infoWindow')">
                 ✖
             </div>
+            <h2>Доставка</h2>
+        </div>
+        <div class="warehouse-info info-menu">
+            <div class="close" onclick="closeWindow('infoWindow')">
+                ✖
+            </div>
+            <h2>Склад</h2>
+        </div>
+        <div class="moneyInfo">
+            <span class="moneyNumber"></span><img src="img/rub.webp" alt="" class="rub">
+        </div>
+        <div class="warehouse" onclick="warehouseMenu()">
+            <span>Склад</span>
+            <img src="img/warehouse.png" alt="">
         </div>
         <div class="car" onclick="deliveryMenu()">
             <span>Доставка</span>
