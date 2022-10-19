@@ -4,8 +4,22 @@ money = parseInt(localStorage.getItem('moneylocal'));
 localStorage.setItem('moneylocal', money);
 document.querySelector('.moneyNumber').innerHTML = money + ' ';
 
-function mouseSound(){
-    var audio = new Audio('sound/mouseClick.mp3');
+let banana = {
+    cost: 60,
+    have: 1341
+};
+
+if (banana.have > 0){
+    document.querySelector('.banana').innerHTML = 'Бананы (' + banana.have + ')';
+}
+
+function mouseSound(x){
+    switch(x){
+        case 'gameSound': var audio = new Audio('sound/mouseClick.mp3'); break;
+        case 'warehouseSound': var audio = new Audio('sound/warehouse.mp3'); break;
+        case 'deliverySound': var audio = new Audio('sound/delivery.mp3'); break;
+    }
+    audio.volume = 0.1;
     audio.play();
 }
 function startGame(){
