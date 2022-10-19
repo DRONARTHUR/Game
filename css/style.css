@@ -27,7 +27,8 @@ body{
     margin: 100px auto;
     overflow-y: hidden;
     border: 2px solid #3f403f;
-    background: #fff;
+    background: url(../img/back.png) right no-repeat #fff;
+    background-size: 100%;
     box-shadow: 1px 1px 5px #3f403f;
     border-radius: 10px;
     overflow: hidden;
@@ -42,6 +43,7 @@ body{
     font-size: 24px;
     text-transform: uppercase;
     cursor: pointer;
+    border-radius: 5px;
 }
 .car, .warehouse{
     background: #fff;
@@ -213,15 +215,3 @@ h2{
     background: #8f8f8f;
 }
 /*---Каталог---*/
-.zal{
-    position: absolute;
-    right: 0;
-    top: 80px;
-    z-index: -1;
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-}
-.vitr>img{
-    transform: scale(-1, 1);
-    width: 200px;
-}
